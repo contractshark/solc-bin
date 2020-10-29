@@ -245,9 +245,9 @@ download_release() {
             )
 
             if [[ $solidity_version == latest ]]; then
-                local release_info_endpoint="https://api.github.com/repos/ethereum/solidity/releases/latest"
+                local release_info_endpoint="https://api.github.com/repos/SRI-CSL/solidity/releases/latest"
             else
-                local release_info_endpoint="https://api.github.com/repos/ethereum/solidity/releases/tags/${solidity_version}"
+                local release_info_endpoint="https://api.github.com/repos/SRI-CSL/solidity/releases/tags/${solidity_version}"
             fi
 
             echo "Getting ${solidity_version} release info from ${release_info_endpoint}"
